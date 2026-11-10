@@ -1,0 +1,1118 @@
+{
+ "说明 README": "老师改这个文件就能更新每周内容。weekly = 每周一帖（start 是上线日期，到这一天才会出现）；challenges = 真实挑战；classBest = 本周最佳评论（不用就写 null）；submitUrl = 学生交截图的问卷链接（不用就留空）。最下面的 _template 是空白模板，复制一份放进 weekly 里再填。",
+ "padlet": "https://padlet.com/jiahangwuphd/anecdote-genre-posts-s0243s6kxpr9vb0k1o5a",
+ "submitUrl": "",
+ "classBest": null,
+ "weekly": [
+  {
+   "id": "w1",
+   "start": "2026-11-02",
+   "kind": "热评",
+   "kind_en": "Hot comment",
+   "src": "铁蛋「我的新形象有没有很惊艳」评论区",
+   "src_en": "From the comments on Tyler's video",
+   "link": "",
+   "who": "网友",
+   "text": "为啥染了黑头发显得更年轻了呢[表情]",
+   "en": "How come dyeing his hair black makes him look younger? [sticker]",
+   "likes": 1491,
+   "words": [
+    [
+     "为啥",
+     "wèishá",
+     "why (informal)"
+    ],
+    [
+     "染",
+     "rǎn",
+     "to dye"
+    ],
+    [
+     "黑头发",
+     "hēi tóufa",
+     "black hair"
+    ],
+    [
+     "显得",
+     "xiǎnde",
+     "to look; to seem"
+    ],
+    [
+     "年轻",
+     "niánqīng",
+     "young"
+    ]
+   ],
+   "q": {
+    "zh": "这位网友觉得铁蛋染了黑头发以后怎么样？",
+    "en": "What does this user think of Tyler after he dyed his hair black?",
+    "opts": [
+     [
+      "看起来更年轻了",
+      "He looks younger"
+     ],
+     [
+      "看起来更老了",
+      "He looks older"
+     ],
+     [
+      "看起来像中国人了",
+      "He looks Chinese now"
+     ]
+    ],
+    "ans": 0
+   },
+   "task": {
+    "zh": "学这位网友，用「为啥……呢」给铁蛋写一条评论，问一个你好奇的问题。",
+    "en": "Like this user, write a comment to Tyler with 「为啥……呢」, asking something you are curious about.",
+    "hint": "为啥你的孩子一眼就认出你了呢？"
+   }
+  },
+  {
+   "id": "w2",
+   "start": "2026-11-09",
+   "kind": "热评",
+   "kind_en": "Hot comment",
+   "src": "铁蛋「我的新形象有没有很惊艳」评论区",
+   "src_en": "From the comments on Tyler's video",
+   "link": "",
+   "who": "网友",
+   "text": "铁蛋还是黑头发显得你高级，有点像费翔[表情]",
+   "en": "Tyler, black hair really makes you look classy — you look a bit like Fei Xiang [emoji]",
+   "likes": 834,
+   "words": [
+    [
+     "还是",
+     "háishi",
+     "… is better after all"
+    ],
+    [
+     "高级",
+     "gāojí",
+     "classy; high-end"
+    ],
+    [
+     "有点像",
+     "yǒudiǎn xiàng",
+     "looks a bit like"
+    ],
+    [
+     "显得",
+     "xiǎnde",
+     "to look; to seem"
+    ],
+    [
+     "费翔",
+     "Fèi Xiáng",
+     "Fei Xiang (a singer)"
+    ]
+   ],
+   "q": {
+    "zh": "这位网友觉得铁蛋像谁？",
+    "en": "Who does this user think Tyler looks like?",
+    "opts": [
+     [
+      "费翔",
+      "Fei Xiang"
+     ],
+     [
+      "马斯克",
+      "Musk"
+     ],
+     [
+      "巴斯光年",
+      "Buzz Lightyear"
+     ]
+    ],
+    "ans": 0
+   },
+   "task": {
+    "zh": "用「有点像……」写一条评论：你觉得染发以后的铁蛋像谁？",
+    "en": "Write a comment with 「有点像……」: who do you think Tyler looks like with dyed hair?",
+    "hint": "铁蛋染了头发以后有点像……"
+   }
+  }
+ ],
+ "challenges": [
+  {
+   "id": "c1",
+   "start": "2026-11-02",
+   "e": "👀",
+   "zh": "在小红书上关注一位中国博主，看完他最新的一条笔记。",
+   "en": "Follow a Chinese creator on Xiaohongshu and read their latest note."
+  },
+  {
+   "id": "c2",
+   "start": "2026-11-09",
+   "e": "❤️",
+   "zh": "给一条你喜欢的笔记点赞、收藏，再留一条中文评论。",
+   "en": "Like and save a note you enjoy, then leave a comment in Chinese."
+  },
+  {
+   "id": "c3",
+   "start": "2026-11-16",
+   "e": "🔍",
+   "zh": "在小红书搜「挑战」，找一条挑战类视频，说说它有哪几个阶段。",
+   "en": "Search 「挑战」 on Xiaohongshu, find a challenge video and name its stages."
+  },
+  {
+   "id": "c4",
+   "start": "2026-11-23",
+   "e": "💬",
+   "zh": "在一条真实的笔记下面，用「挺……的」或「更……了」写一条评论。",
+   "en": "Under a real note, write a comment using 「挺……的」 or 「更……了」."
+  }
+ ],
+ "_template": {
+  "id": "w3",
+  "start": "2026-11-16",
+  "kind": "热评",
+  "kind_en": "Hot comment",
+  "src": "来源：谁的哪条帖子",
+  "src_en": "Source",
+  "link": "原帖链接（可以留空）",
+  "who": "网友",
+  "text": "帖子或评论原文",
+  "en": "英文翻译",
+  "likes": 0,
+  "words": [
+   [
+    "词",
+    "pīnyīn",
+    "meaning"
+   ],
+   [
+    "词",
+    "pīnyīn",
+    "meaning"
+   ],
+   [
+    "词",
+    "pīnyīn",
+    "meaning"
+   ],
+   [
+    "词",
+    "pīnyīn",
+    "meaning"
+   ],
+   [
+    "词",
+    "pīnyīn",
+    "meaning"
+   ]
+  ],
+  "q": {
+   "zh": "理解题",
+   "en": "Question in English",
+   "opts": [
+    [
+     "正确答案",
+     "Right answer"
+    ],
+    [
+     "错的",
+     "Wrong"
+    ],
+    [
+     "错的",
+     "Wrong"
+    ]
+   ],
+   "ans": 0
+  },
+  "task": {
+   "zh": "评论任务",
+   "en": "Comment task in English",
+   "hint": "例子"
+  }
+ },
+ "audio": {
+  "f": {
+   "黑头发": "audio/f_e859644dcd.mp3",
+   "有点像": "audio/f_de343d5a3b.mp3",
+   "为啥染了黑头发显得更年轻了呢": "audio/f_b0ef488503.mp3",
+   "铁蛋还是黑头发显得你高级，有点像费翔": "audio/f_010ac70950.mp3"
+  },
+  "m": {
+   "黑头发": "audio/m_e859644dcd.mp3",
+   "为啥染了黑头发显得更年轻了呢": "audio/m_b0ef488503.mp3",
+   "有点像": "audio/m_de343d5a3b.mp3",
+   "铁蛋还是黑头发显得你高级，有点像费翔": "audio/m_010ac70950.mp3"
+  }
+ },
+ "videos": [
+  {
+   "id": "v2",
+   "draft": true,
+   "title": "示例：这里写视频标题",
+   "creator": "博主名字",
+   "link": "",
+   "intro": "一句话介绍这条视频：谁、挑战什么。",
+   "intro_en": "One line about the video: who, and what the challenge is.",
+   "lines": [
+    {
+     "sp": "博主",
+     "zh": "今天我挑战一天只说中文。",
+     "en": "Today I'm challenging myself to speak only Chinese for a day."
+    },
+    {
+     "sp": "博主",
+     "zh": "你们觉得我能坚持到晚上吗？",
+     "en": "Do you think I can last until tonight?"
+    }
+   ],
+   "words": [
+    [
+     "挑战",
+     "tiǎozhàn",
+     "challenge; to challenge"
+    ],
+    [
+     "坚持",
+     "jiānchí",
+     "to keep going; to persist"
+    ]
+   ],
+   "patterns": [
+    {
+     "zh": "你们觉得……吗？",
+     "en": "Do you think …?",
+     "note": "用问题结尾，邀请观众评论。",
+     "note_en": "End with a question to invite comments.",
+     "ex": "你们觉得我能坚持到晚上吗？",
+     "ex_en": "Do you think I can last until tonight?"
+    }
+   ],
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "他挑战的是什么？",
+     "en": "What is the challenge?",
+     "opts": [
+      [
+       "一天只说中文",
+       "Speak only Chinese for a day"
+      ],
+      [
+       "一天不吃饭",
+       "Not eat for a day"
+      ],
+      [
+       "一天不用手机",
+       "No phone for a day"
+      ]
+     ],
+     "ans": 0,
+     "why": "开头就说清楚了挑战是什么，这是「挑战设定」。",
+     "why_en": "He states the challenge at the start: that's the Challenge stage."
+    },
+    {
+     "type": "genre",
+     "zh": "和铁蛋的视频比，哪里不一样？",
+     "en": "How is it different from Tyler's video?",
+     "opts": [
+      [
+       "没有「引出话题」，直接开始挑战",
+       "No premise; it starts with the challenge"
+      ],
+      [
+       "没有结果",
+       "No result"
+      ],
+      [
+       "一模一样",
+       "Exactly the same"
+      ]
+     ],
+     "ans": 0,
+     "why": "阶段可以省略：这条视频直接从挑战开始。",
+     "why_en": "Stages can be skipped: this one starts right at the challenge."
+    }
+   ]
+  },
+  {
+   "id": "mv-sufen",
+   "title": "一周只嗦粉，外国人受得了吗？",
+   "creator": "庐可思议",
+   "link": "https://xhslink.cn/o/UcYyMs7tDP",
+   "intro": "比利时博主在广西一周只吃粉，看看自己受不受得了。",
+   "intro_en": "A Belgian creator eats only rice noodles for a week in Guangxi to see if he can take it.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 0,
+     "why": "这条视频检验的是：博主吃不吃得惯。吃是挑战类视频里最常见的一种。",
+     "why_en": "It tests whether the creator can handle the food. Food is the most common kind of challenge."
+    }
+   ]
+  },
+  {
+   "id": "mv-majiang",
+   "title": "老外第一次打麻将！竟然还赢啦！",
+   "creator": "丹妞在中国",
+   "link": "https://xhslink.cn/o/3kW0G35yixM",
+   "intro": "俄罗斯博主第一次和中国朋友打麻将。",
+   "intro_en": "A Russian creator plays mahjong with Chinese friends for the first time.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 4,
+     "why": "这条视频检验的是：第一次做一件事，能不能上手。",
+     "why_en": "It tests whether the creator can manage something for the first time."
+    }
+   ]
+  },
+  {
+   "id": "mv-kapianji",
+   "title": "卡片机挑战 你的城市出片吗？",
+   "creator": "曹操来了",
+   "link": "https://xhslink.cn/o/7t21zgTP0iF",
+   "intro": "博主用一台卡片机拍自己的城市，看看出不出片。",
+   "intro_en": "The creator shoots his own city with a compact camera to see if it looks good in photos.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 5,
+     "why": "这条视频检验的是：博主能不能做成一件需要动手或技能的事。",
+     "why_en": "It tests whether the creator can make or do something that takes skill."
+    }
+   ]
+  },
+  {
+   "id": "mv-suiji",
+   "title": "荷兰人《随机金额吃零食》挑战！",
+   "creator": "Finn",
+   "link": "https://xhslink.cn/o/4irf17jAvk9",
+   "intro": "荷兰博主抽到 100 块，在超市买零食。",
+   "intro_en": "A Dutch creator draws 100 yuan and buys snacks at a supermarket.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 3,
+     "why": "这条视频先定一个规则（比如钱数），再看在这个规则里能做到什么。",
+     "why_en": "It sets a rule (such as a budget) and sees what can be done within it."
+    }
+   ]
+  },
+  {
+   "id": "mv-huoguo",
+   "title": "老外对中国火锅的开发不足1%…这都能吃?!",
+   "creator": "帅山姆先生在中国",
+   "link": "https://xhslink.cn/o/61PXFqN9Qp7",
+   "intro": "在北京的外国博主挑战吃火锅里不常见的食材。",
+   "intro_en": "A foreign creator in Beijing tries uncommon hot pot ingredients.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 0,
+     "why": "这条视频检验的是：博主吃不吃得惯。吃是挑战类视频里最常见的一种。",
+     "why_en": "It tests whether the creator can handle the food. Food is the most common kind of challenge."
+    }
+   ]
+  },
+  {
+   "id": "mv-pidan",
+   "title": "老外挑战皮蛋豆腐",
+   "creator": "进口马可",
+   "link": "https://xhslink.cn/o/3LT9ykqVcOW",
+   "intro": "外国博主挑战吃皮蛋豆腐。",
+   "intro_en": "A foreign creator takes on preserved egg with tofu.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 0,
+     "why": "这条视频检验的是：博主吃不吃得惯。吃是挑战类视频里最常见的一种。",
+     "why_en": "It tests whether the creator can handle the food. Food is the most common kind of challenge."
+    }
+   ]
+  },
+  {
+   "id": "mv-furu",
+   "title": "老外挑战成都腐乳",
+   "creator": "老外顾斯Gus",
+   "link": "https://xhslink.cn/o/2QrX0tgzOQs",
+   "intro": "波兰博主逛成都菜市场，第一次吃豆腐乳。",
+   "intro_en": "A Polish creator visits a Chengdu market and tries fermented tofu for the first time.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 0,
+     "why": "这条视频检验的是：博主吃不吃得惯。吃是挑战类视频里最常见的一种。",
+     "why_en": "It tests whether the creator can handle the food. Food is the most common kind of challenge."
+    }
+   ]
+  },
+  {
+   "id": "mv-luosifen",
+   "title": "外国人第三次挑战螺狮粉~辣到模糊？",
+   "creator": "德国人Leo乐柏说",
+   "link": "https://xhslink.cn/o/AEwAGiaIXl2",
+   "intro": "德国博主第三次挑战吃螺蛳粉。",
+   "intro_en": "A German creator takes on river snail noodles for the third time.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 0,
+     "why": "这条视频检验的是：博主吃不吃得惯。吃是挑战类视频里最常见的一种。",
+     "why_en": "It tests whether the creator can handle the food. Food is the most common kind of challenge."
+    }
+   ]
+  },
+  {
+   "id": "mv-baozi",
+   "title": "在国外太想吃包子了，一口气做50个",
+   "creator": "小马逛吃",
+   "link": "https://xhslink.cn/o/4Gw5NA3cCrk",
+   "intro": "博主在国外太想吃包子，挑战一口气做 50 个。",
+   "intro_en": "Missing baozi abroad, the creator challenges himself to make 50 at once.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 5,
+     "why": "这条视频检验的是：博主能不能做成一件需要动手或技能的事。",
+     "why_en": "It tests whether the creator can make or do something that takes skill."
+    }
+   ]
+  },
+  {
+   "id": "mv-nvwu",
+   "title": "俩外国帅哥挑战女巫的毒药",
+   "creator": "北大留子盖文儿",
+   "link": "https://xhslink.cn/o/1CPffrEeKuA",
+   "intro": "博主带德国朋友玩「女巫的毒药」游戏。",
+   "intro_en": "The creator plays the “witch’s poison” game with a German friend.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 0,
+     "why": "这条视频检验的是：博主吃不吃得惯。吃是挑战类视频里最常见的一种。",
+     "why_en": "It tests whether the creator can handle the food. Food is the most common kind of challenge."
+    }
+   ]
+  },
+  {
+   "id": "mv-putonghua",
+   "title": "外国人普通话大挑战，觉得我过了吗？",
+   "creator": "丽塔一家",
+   "link": "https://xhslink.cn/o/8V9cJdl6UMb",
+   "intro": "外国博主挑战说普通话，问网友：我过了吗？",
+   "intro_en": "A foreign creator takes a Mandarin challenge and asks viewers: did I pass?",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 2,
+     "why": "这条视频检验的是：博主说得好不好。",
+     "why_en": "It tests how well the creator speaks."
+    }
+   ]
+  },
+  {
+   "id": "mv-raokouling",
+   "title": "挑战绕口令啦！",
+   "creator": "王渊源John",
+   "link": "https://xhslink.cn/o/AgzcdGCQYD2",
+   "intro": "博主挑战说绕口令。",
+   "intro_en": "The creator takes on tongue twisters.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 2,
+     "why": "这条视频检验的是：博主说得好不好。",
+     "why_en": "It tests how well the creator speaks."
+    }
+   ]
+  },
+  {
+   "id": "mv-kaiche",
+   "title": "挑战第一次在中国开车！",
+   "creator": "保保熊",
+   "link": "https://xhslink.cn/o/2R6GPrPGAWs",
+   "intro": "博主第一次在中国开车。",
+   "intro_en": "The creator drives in China for the first time.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 4,
+     "why": "这条视频检验的是：第一次做一件事，能不能上手。",
+     "why_en": "It tests whether the creator can manage something for the first time."
+    }
+   ]
+  },
+  {
+   "id": "mv-dongjing",
+   "title": "东京¥100挑战？？！！",
+   "creator": "马佳PopMatta",
+   "link": "https://xhslink.cn/o/1DNPa6WsaTo",
+   "intro": "博主在东京做「100 元挑战」。",
+   "intro_en": "The creator does a “100 yuan challenge” in Tokyo.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 3,
+     "why": "这条视频先定一个规则（比如钱数），再看在这个规则里能做到什么。",
+     "why_en": "It sets a rule (such as a budget) and sees what can be done within it."
+    }
+   ]
+  },
+  {
+   "id": "mv-yidali",
+   "title": "上海把意大利人带回家了？！",
+   "creator": "Alexx雷",
+   "link": "https://xhslink.cn/o/6qiGhUv741B",
+   "intro": "意大利博主挑战：不坐飞机，在上海找到回家的感觉。",
+   "intro_en": "An Italian creator tries to feel at home in Shanghai without flying home.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 4,
+     "why": "这条视频检验的是：第一次做一件事，能不能上手。",
+     "why_en": "It tests whether the creator can manage something for the first time."
+    }
+   ]
+  },
+  {
+   "id": "mv-guaguale",
+   "title": "小老外挑战三张刮刮乐生活一天",
+   "creator": "阿钢和小辣椒",
+   "link": "https://xhslink.cn/o/2SEwKAbb9LZ",
+   "intro": "博主挑战靠三张刮刮乐生活一天。",
+   "intro_en": "The creator tries to live for a day on three scratch-off tickets.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 3,
+     "why": "这条视频先定一个规则（比如钱数），再看在这个规则里能做到什么。",
+     "why_en": "It sets a rule (such as a budget) and sees what can be done within it."
+    }
+   ]
+  },
+  {
+   "id": "mv-jingtong",
+   "title": "缓解经痛都那么千奇百怪吗？",
+   "creator": "阿菊Addy",
+   "link": "https://xhslink.cn/o/1ojRNwGZTgs",
+   "intro": "博主挑战试一试中式缓解经痛的方法。",
+   "intro_en": "The creator tries Chinese ways to ease period pain.",
+   "think": "看的时候想一想：这条视频有哪几步？和精讲视频相比，少了哪一步、多了哪一步？",
+   "think_en": "While you watch, think: what steps does this video have? Compared with the in-depth video, which step is missing, and which is added?",
+   "questions": [
+    {
+     "type": "genre",
+     "zh": "这条视频挑战的是什么？",
+     "en": "What does this video challenge?",
+     "opts": [
+      [
+       "吃的东西",
+       "Food"
+      ],
+      [
+       "外表和打扮",
+       "Looks and dress"
+      ],
+      [
+       "说话和语言",
+       "Speaking and language"
+      ],
+      [
+       "钱或规则",
+       "Money or a rule"
+      ],
+      [
+       "第一次体验",
+       "A first-time experience"
+      ],
+      [
+       "动手做或技能",
+       "Making something or a skill"
+      ]
+     ],
+     "ans": 4,
+     "why": "这条视频检验的是：第一次做一件事，能不能上手。",
+     "why_en": "It tests whether the creator can manage something for the first time."
+    }
+   ]
+  }
+ ],
+ "_video_说明": "videos = 练习视频（放在铁蛋视频后面，Lesson 2 里）。draft: true 的只有老师（网址加 ?teacher）看得到；写好以后把 draft 改成 false 或删掉这一行，学生就能看到。words 每项 [词, 拼音, 英文, 例句(可不写), 例句英文(可不写)]；questions 的 type 可以是 genre / vocab / grammar。"
+}
