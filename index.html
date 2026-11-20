@@ -1736,7 +1736,7 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
 <div class="g">
   <div class="topbar on-hub on-home">
     <button class="tbar-btn no-print back-btn" id="home-btn" onclick="homeBtnClick()" style="visibility:hidden" aria-label="返回 Back"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg><span class="hb-lbl">返回</span></button>
-    <div class="lvbadge" id="lvbadge">看懂 Reader</div>
+    <div class="lvbadge" id="lvbadge">理解 Understand</div>
     <div class="fans" id="fanbox" title="粉丝 Followers" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"></path></svg><span id="fancount">0</span><span class="fans-lbl">粉丝</span></div>
     <div style="flex:1"></div>
     <button class="tbar-btn no-print lookup-btn on" id="lookup-btn" onclick="setLookup(!lookupOn)" aria-pressed="true" aria-label="查词 Tap words for meanings"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"></path><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"></path></svg><span>查词 开</span></button>
@@ -1759,7 +1759,7 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
     </div>
     <div class="home-card">
       <div class="hc-k">学完以后，你能 <span class="en-auto">By the end, you can</span></div>
-      <div class="goal"><span class="gi" style="background:#F5EDE6;color:#395C61">1</span><div><b>看懂</b> 小红书上的视频、字幕和评论<span class="en-auto">Understand Xiaohongshu videos, captions and comments</span></div></div>
+      <div class="goal"><span class="gi" style="background:#F5EDE6;color:#395C61">1</span><div><b>理解</b> 小红书上的视频、字幕和评论<span class="en-auto">Understand Xiaohongshu videos, captions and comments</span></div></div>
       <div class="goal"><span class="gi" style="background:#F8ECE1;color:#8B5221">2</span><div><b>发帖</b> 用合适的结构发一条自己的视频笔记<span class="en-auto">Post your own video note with the right structure</span></div></div>
       <div class="goal"><span class="gi" style="background:#E5EEE2;color:#436139">3</span><div><b>评论</b> 像网友一样得体地评论、回复<span class="en-auto">Comment and reply appropriately, like a real user</span></div></div>
     </div>
@@ -1776,7 +1776,7 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
   <!-- UNITS -->
   <div class="screen" id="s-units">
     <div class="units-hero">学习单元 <span class="en-auto">Units</span></div>
-    <div class="units-sub">每个体裁单元分四课：语言基础 → 看懂 → 发帖 → 评论。<span class="en-auto">Each genre unit has four lessons: language basics, reading, posting, and commenting.</span></div>
+    <div class="units-sub">每个体裁单元分四课：语言基础 → 理解 → 发帖 → 评论。<span class="en-auto">Each genre unit has four lessons: language basics, understand, post, and comment.</span></div>
     <div id="home-units"></div>
     <div class="home-tbc">未完待续…… 更多单元正在制作中 <span class="en-auto">To be continued — more units are on the way</span></div>
   </div>
@@ -1798,7 +1798,7 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
         <div class="units-row cur"><b>第 1 单元</b><span>挑战类视频</span><i>正在学</i></div>
         <div class="units-row"><b>第 2 单元</b><span>Genre 2</span><i>即将推出</i></div>
         <div class="units-row"><b>第 3 单元</b><span>Genre 3</span><i>即将推出</i></div>
-        <div class="units-note">每个单元学一种小红书常见的帖子，都按“看懂 → 发帖 → 评论”的顺序来学。<span class="en-auto">Each unit teaches one common type of Xiaohongshu post, in the order “看懂 → 发帖 → 评论”.</span></div>
+        <div class="units-note">每个单元学一种小红书常见的帖子，都按“理解 → 发帖 → 评论”的顺序来学。<span class="en-auto">Each unit teaches one common type of Xiaohongshu post, in the order: understand, post, comment.</span></div>
       </div>
     </div>
     <div class="teacher-panel no-print" id="teacher-panel" style="display:none">
@@ -1824,14 +1824,14 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
 
   <!-- LEVEL MENUS: pick any task directly -->
   <div class="screen" id="s-l1menu">
-    <div class="chip">Lesson 2 — 看懂 Reading</div>
+    <div class="chip">Lesson 2 — 理解 Understand</div>
     <div class="card"><div class="sec-title">选择任务</div>
       <div class="sec-sub" data-en="Tap whichever you want to do. Finished tasks can be redone, or you can jump straight to the task you want.">想做哪个就点哪个。做完的任务可以重做，也可以直接跳到想做的任务。</div></div>
     <div id="l1-lock-note"></div>
     <div class="task-list" id="l1-tasks"></div>
   </div>
   <div class="screen" id="s-l2menu">
-    <div class="chip">Lesson 4 — 评论 Commenting</div>
+    <div class="chip">Lesson 4 — 评论 Comment</div>
     <div class="card"><div class="sec-title">选择任务</div>
       <div class="sec-sub" data-en="Tap whichever you want to do. Finished tasks can be redone, or you can jump straight to the task you want.">想做哪个就点哪个。做完的任务可以重做，也可以直接跳到想做的任务。</div></div>
     <div class="task-list" id="l2-tasks"></div>
@@ -1839,7 +1839,7 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
 
   <!-- LEVEL 2: POSTER -->
   <div class="screen" id="s-postmenu">
-    <div class="chip">Lesson 3 — 发帖 Posting</div>
+    <div class="chip">Lesson 3 — 发帖 Post</div>
     <div class="card"><div class="sec-title">选择任务</div>
       <div class="sec-sub" data-en="Now you are the creator. First see how a video note is made, then post your own.">现在你是博主。先看一条视频笔记怎么做，再发你自己的。</div></div>
     <div class="task-list" id="post-tasks"></div>
@@ -2155,7 +2155,7 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
 
   <!-- L2 DANMU -->
   <div class="screen task-scr" id="s-l2">
-    <div class="chip">Lesson 4 — 评论 Commenting</div>
+    <div class="chip">Lesson 4 — 评论 Comment</div>
     <div class="card">
       <div class="sec-title">三轮弹幕练习</div>
       <div class="sec-sub" data-en="Each round, find one type of comment; just tap it. Read the task clearly before you start.">每轮找一种评论，点一下就行。开始前先看清任务。</div>
@@ -2329,15 +2329,15 @@ details.vt-group{background:#FFFFFF;border:1px solid #EFE2D5;border-radius:16px;
         <div style="font-size:12px;color:#1F1A17" data-en="You read the video&#x27;s subtitle script and practised its key words and sentence patterns.">你读了视频的字幕稿，练习了里面的重点词和句式。</div>
       </div>
       <div style="background:#E5EEE2;border-radius:12px;padding:12px 14px">
-        <div style="font-size:11px;font-weight:600;color:#436139;margin-bottom:4px">✓ Lesson 2 — 看懂 Reader</div>
+        <div style="font-size:11px;font-weight:600;color:#436139;margin-bottom:4px">✓ Lesson 2 — 理解 Understand</div>
         <div style="font-size:12px;color:#1F1A17" data-en="You understood what the video is saying, who is talking to whom, how the video develops step by step, and why so many people came to comment.">你看懂了视频在说什么、谁在对谁说、视频怎么一步一步展开，也明白了为什么这么多人来评论。</div>
       </div>
       <div style="background:#F5EDE6;border-radius:12px;padding:12px 14px">
-        <div style="font-size:11px;font-weight:600;color:#8B5221;margin-bottom:4px">✓ Lesson 3 — 发帖 Poster</div>
+        <div style="font-size:11px;font-weight:600;color:#8B5221;margin-bottom:4px">✓ Lesson 3 — 发帖 Post</div>
         <div style="font-size:12px;color:#1F1A17" data-en="You made a Xiaohongshu video note of your own using the challenge structure, and posted it on the class wall.">你用挑战类结构做了一条自己的小红书视频笔记，并发到了班级墙。</div>
       </div>
       <div style="background:#F5EDE6;border-radius:12px;padding:12px 14px">
-        <div style="font-size:11px;font-weight:600;color:#395C61;margin-bottom:4px">✓ Lesson 4 — 评论 Commenter</div>
+        <div style="font-size:11px;font-weight:600;color:#395C61;margin-bottom:4px">✓ Lesson 4 — 评论 Comment</div>
         <div style="font-size:12px;color:#1F1A17" data-en="You found three types of real comments in the danmu, thought about why the most-liked comment is popular, wrote a comment and a reply in Chinese, and commented on your classmates&#x27; video notes.">你在弹幕里找出了三类真实评论，想了想点赞最多的评论为什么受欢迎，还用中文写了评论、回复，也评论了同学的视频笔记。</div>
       </div>
     </div>
@@ -2454,9 +2454,9 @@ function resetProgress(){
 var TEACHER=/[?&#]teacher/.test(location.search+location.hash);
 
 var levels=[
-  {id:1,icon:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#395C61" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>',name:'Lesson 2 — 看懂 Reader',desc:'看懂铁蛋的视频：理解题 + 视频结构 <span class="en-auto">Understand Tyler\'s video: questions + video structure</span>',bg:'#F5EDE6'},
-  {id:2,icon:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8B5221" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg>',name:'Lesson 3 — 发帖 Poster',desc:'发一条自己的挑战类视频笔记，发到班级墙 <span class="en-auto">Post your own challenge video note and share it</span>',bg:'#F8ECE1'},
-  {id:3,icon:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#436139" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12z"></path></svg>',name:'Lesson 4 — 评论 Commenter',desc:'弹幕、评论、回复，再给同学的帖子写评论 <span class="en-auto">Danmu, comments, replies + comment on classmates\' posts</span>',bg:'#E5EEE2'},
+  {id:1,icon:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#395C61" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>',name:'Lesson 2 — 理解 Understand',desc:'看懂铁蛋的视频：理解题 + 视频结构 <span class="en-auto">Understand Tyler\'s video: questions + video structure</span>',bg:'#F5EDE6'},
+  {id:2,icon:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8B5221" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg>',name:'Lesson 3 — 发帖 Post',desc:'发一条自己的挑战类视频笔记，发到班级墙 <span class="en-auto">Post your own challenge video note and share it</span>',bg:'#F8ECE1'},
+  {id:3,icon:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#436139" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12z"></path></svg>',name:'Lesson 4 — 评论 Comment',desc:'弹幕、评论、回复，再给同学的帖子写评论 <span class="en-auto">Danmu, comments, replies + comment on classmates\' posts</span>',bg:'#E5EEE2'},
 ];
 
 // ── QUIZ DATA ─────────────────────────────────────────────────
@@ -2646,7 +2646,7 @@ var WHY_OPTS=[
 ];
 var whyPick={},whyDone=false;
 function goLikes(){
-  whyPick=Object.assign({},S.whyPicks||{});whyDone=!!S.likeGuess;document.getElementById('lvbadge').textContent='评论 Commenter';
+  whyPick=Object.assign({},S.whyPicks||{});whyDone=!!S.likeGuess;document.getElementById('lvbadge').textContent='评论 Comment';
   document.getElementById('lk-pics').innerHTML='<img src="'+IMG_COMMENT[0]+'" alt="巴斯光年 Buzz Lightyear"><img src="'+IMG_COMMENT[1]+'" alt="铁蛋 Tyler">';
   document.getElementById('lk-hero-n').innerHTML=HEART+' 2,244';
   renderWhy();toggleWhyEn(false);document.getElementById('likes-after').style.display=whyDone?'block':'none';
@@ -2755,7 +2755,7 @@ function renderPostMenu(){
 }
 function goPostIntro(){
   S.postIntroSeen=true;save();
-  document.getElementById('lvbadge').textContent='发帖 Poster';
+  document.getElementById('lvbadge').textContent='发帖 Post';
   var row=function(a){return '<div class="anat-row" style="border-left-color:'+a.c+'"><div class="anat-k" style="color:'+a.c+'">'+a.k+'</div><div class="anat-v" data-en="'+escAttr(a.en)+'">'+esc(a.cn)+'</div></div>';};
   document.getElementById('anat0').innerHTML=ANAT.slice(0,2).map(row).join('');
   document.getElementById('anat1').innerHTML=ANAT.slice(2,7).map(row).join('');
@@ -2765,7 +2765,7 @@ function goPostIntro(){
 function postDefaults(){if(!S.post)S.post={fmt:'video',ctext:'',title:'',greet:'',hook:'',setup:'',make:'',test:'',result:'',q:'',tags:'',cover:''};return S.post;}
 function goPost(){
   var P=postDefaults();
-  document.getElementById('lvbadge').textContent='发帖 Poster';
+  document.getElementById('lvbadge').textContent='发帖 Post';
   ['title','greet','hook','setup','make','test','result','q','tags','ctext'].forEach(function(k){var e=document.getElementById('pf-'+k);if(!e)return;document.getElementById('pf-'+k).value=P[k]||'';});
   document.getElementById('emoji-bar-post').innerHTML=emojiBarHtml('post');
   document.getElementById('tag-sugg').innerHTML=TAG_SUGG.map(function(t){return '<button type="button" class="tag-chip" onclick="addTag(\''+t+'\')">'+t+'</button>';}).join('');
@@ -2845,7 +2845,7 @@ function renderPublish(){
    +(PADLET_URL?'<a class="pbtn doc-link" href="'+escAttr(PADLET_URL)+'" target="_blank" rel="noopener">打开班级墙 Open the class wall</a>'
      :'<div class="f-empty">老师还没有设置班级墙链接。 The teacher has not added the class wall link yet.</div>')
    +'<label class="confirm-row"><input type="checkbox" id="post-done-chk" '+(S.postDone?'checked':'')+' onchange="markPosted(this.checked)"> 我已经发到班级墙了 I have posted it on the class wall</label>'
-   +'<button type="button" class="pbtn" id="post-next" style="margin-top:12px;'+(S.postDone?'':'display:none')+'" onclick="backToHub()">下一步：Lesson 4 评论 Next: Lesson 4 Commenter →</button>';
+   +'<button type="button" class="pbtn" id="post-next" style="margin-top:12px;'+(S.postDone?'':'display:none')+'" onclick="backToHub()">下一步：Lesson 4 评论 Next: Lesson 4 Comment →</button>';
   el.innerHTML=h;
 }
 function markPosted(v){
@@ -2855,7 +2855,7 @@ function markPosted(v){
 function peerCheck(v){S.peerDone=v;save();document.getElementById('peer-next').style.display=v?'':'none';
   if(v){fxJudge(true);guideSay('happy','太棒了！同学的视频笔记更热闹了。','Great! Your classmates'+String.fromCharCode(39)+' video notes are livelier now.',6000);}}
 function goPeer(){
-  document.getElementById('lvbadge').textContent='评论 Commenter';
+  document.getElementById('lvbadge').textContent='评论 Comment';
   document.getElementById('peer-box').innerHTML=(PADLET_URL?'<a class="pbtn doc-link" href="'+escAttr(PADLET_URL)+'" target="_blank" rel="noopener">打开班级墙 Open the class wall</a>'
      :'<div class="f-empty">老师还没有设置班级墙链接。 The teacher has not added the class wall link yet.</div>')
     +'<label class="confirm-row"><input type="checkbox" '+(S.peerDone?'checked':'')+' onchange="peerCheck(this.checked)"> 我已经评论了两位同学，也回复了一条评论 I commented on two classmates and replied to one comment</label>'
@@ -3099,14 +3099,14 @@ var PATH=[
     {k:'script',n:'边读边学',en:'Read & learn',ic:'book',done:function(){return !!S.scriptSeen;},go:function(){goScript();}},
     {k:'cards',n:'单词练习',en:'Word practice',ic:'cards',done:function(){return !!(S.cardsDone||(COURSE===1?S.prRounds:S.cardRound));},go:function(){prDeck=COURSE===1?'tyler':'core'+COURSE;S.book=prDeck;goCards();}},
     {k:'games',n:'词汇游戏',en:'Word games',ic:'tiles',done:function(){return !!S.gamesDone;},go:function(){goGames();}}]},
-  {lv:1,t:'Lesson 2 · 看懂',en:'Reading',tasks:[
+  {lv:1,t:'Lesson 2 · 理解',en:'Understand',tasks:[
     {k:'quiz',n:'理解题',en:'Comprehension',ic:'question',needVideo:1,done:function(){return quizAllAnswered();},go:function(){tJump('quiz');}},
     {k:'stage',n:'视频结构',en:'Video structure',ic:'steps',needVideo:1,done:function(){return stagingDone();},go:function(){tJump('staging');}},
   {k:'modes',n:'它是怎么出现的',en:'How does it appear?',ic:'film',needVideo:1,done:function(){return modesDone();},go:function(){tJump('modes');}}]},
-  {lv:2,t:'Lesson 3 · 发帖',en:'Posting',tasks:[
+  {lv:2,t:'Lesson 3 · 发帖',en:'Post',tasks:[
     {k:'anat',n:'认识视频笔记',en:'Anatomy of a note',ic:'search',done:function(){return !!S.postIntroSeen;},go:function(){tJump('postintro');}},
     {k:'post',n:'发一条笔记',en:'Write & share',ic:'pen',done:function(){return !!S.postDone;},go:function(){tJump('post');}}]},
-  {lv:3,t:'Lesson 4 · 评论',en:'Commenting',tasks:[
+  {lv:3,t:'Lesson 4 · 评论',en:'Comment',tasks:[
     {k:'read',n:'看评论',en:'Read comments',ic:'bubbles',done:function(){return !!(S.dmDone&&S.dmDone[0]&&S.dmDone[1]&&S.dmDone[2]&&S.likeGuess);},go:function(){var d=S.dmDone||[];for(var i=0;i<3;i++){if(!d[i]){tJump('dm'+i);return;}}tJump('likes');}},
     {k:'write',n:'写评论、回复',en:'Comment & reply',ic:'reply',done:function(){return !!(S.formDone||(S.commentChecked&&S.reply));},go:function(){tJump('write');if(false)tJump('reply');}},
     {k:'peer',n:'给同学评论',en:'Classmates',ic:'people',done:function(){return !!S.peerDone;},go:function(){tJump('peer');}}]}];
@@ -3162,7 +3162,7 @@ var ICO={
 function ico(n,sz,sw){return '<svg class="ico" width="'+(sz||20)+'" height="'+(sz||20)+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="'+(sw||1.8)+'" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICO[n]||'')+'</svg>';}
 var LV_STY=[{e:'brush',c:'#9F5E25',bg:'#F8ECE1'},{e:'window',c:'#3F666C',bg:'#E8F0F1'},{e:'seal',c:'#CA5C31',bg:'#F6EFEA'},{e:'cloud',c:'#436139',bg:'#E7EFE4'}];
 try{setTimeout(function(){loadContent();appBadge();},300);}catch(e){}
-function setLvBadge(n){var l=['语言基础 Basics','看懂 Reading','发帖 Posting','评论 Commenting'];var b=document.getElementById('lvbadge');if(b)b.textContent=l[n]||'';}
+function setLvBadge(n){var l=['语言基础 Basics','理解 Understand','发帖 Post','评论 Comment'];var b=document.getElementById('lvbadge');if(b)b.textContent=l[n]||'';}
 var HUB_OPEN={};
 function hubToggle(a){HUB_OPEN[a]=!hubIsOpen(a);renderHub();}
 function hubIsOpen(a){if(HUB_OPEN[a]!=null)return HUB_OPEN[a];if(window.matchMedia&&window.matchMedia('(min-width:800px)').matches)return true;var c=pathCurrent();return c?c[0]===a:a===0;}
@@ -3248,7 +3248,7 @@ function showErr(e){try{var m=(e&&(e.message||e.reason&&e.reason.message))||Stri
   b.textContent='出错了，请截图发给老师（点这里关闭）：'+m+(e&&e.stack?' | '+String(e.stack).split('\n').slice(0,2).join(' '):'');}catch(x){}}
 window.addEventListener('error',function(ev){showErr(ev.error||ev.message);});
 function goWatch(){
-  document.getElementById('lvbadge').textContent='看懂 Reader';
+  document.getElementById('lvbadge').textContent='理解 Understand';
   watchStep=S.videoSeen?3:(S.watchStep||1);
   show('s-l1');renderWatch();
 }
@@ -3346,7 +3346,7 @@ function renderL2Menu(){
 function showLevelMenu(n){
   dmTimers.forEach(function(t){clearTimeout(t);clearInterval(t);});dmTimers=[];
   if(!TEACHER||true){backToHub();return;}
-  document.getElementById('lvbadge').textContent=n===1?'看懂 Reader':n===2?'发帖 Poster':'评论 Commenter';
+  document.getElementById('lvbadge').textContent=n===1?'理解 Understand':n===2?'发帖 Post':'评论 Comment';
   if(n===1){if(!S.videoSeen&&!TEACHER){goWatch();return;}renderL1Menu();show('s-l1menu');}
   else if(n===2){renderPostMenu();show('s-postmenu');}
   else{renderL2Menu();show('s-l2menu');}
@@ -3464,7 +3464,7 @@ document.addEventListener('click',function(){setTimeout(histPush,80);},true);
 
 function startLevel(n){
   if(S.unlocked.indexOf(n)<0)return;
-  var labels=['','看懂 Reader','发帖 Poster','评论 Commenter'];
+  var labels=['','理解 Understand','发帖 Post','评论 Comment'];
   document.getElementById('lvbadge').textContent=labels[n];
   showLevelMenu(n);
 }
@@ -4629,7 +4629,7 @@ function finishL2(){
   S.l2Done=true;save();
   document.getElementById('re').innerHTML=MARK_CHECK;
   document.getElementById('rt2').textContent='Lesson 4 完成！';
-  setCnEn(document.getElementById('rs2'),'你已经走完了「看懂 → 发帖 → 评论」三步。',"You've gone from Reader to Poster to Commenter.");
+  setCnEn(document.getElementById('rs2'),'你已经走完了「理解 → 发帖 → 评论」三步。',"You've gone through understand, post, and comment.");
   document.getElementById('sco').textContent='';document.getElementById('scol').textContent='';
   document.getElementById('fan-total').textContent=S.fans;
   document.getElementById('r-insight').innerHTML=makeCnEnBlock(
@@ -4656,22 +4656,22 @@ function tJump(where){
   dmTimers.forEach(function(t){clearTimeout(t);clearInterval(t);});dmTimers=[];
   var badge=document.getElementById('lvbadge');
   if(where==='l1'){goWatch();}
-  else if(where==='quiz'){badge.textContent='看懂 Reader';startQuiz();}
-  else if(where==='staging'){badge.textContent='看懂 Reader';goStaging();}
-  else if(where==='modes'){badge.textContent='看懂 Reader';goModes();}
+  else if(where==='quiz'){badge.textContent='理解 Understand';startQuiz();}
+  else if(where==='staging'){badge.textContent='理解 Understand';goStaging();}
+  else if(where==='modes'){badge.textContent='理解 Understand';goModes();}
   else if(where.indexOf('dm')===0){
-    var r=parseInt(where.slice(2),10);badge.textContent='评论 Commenter';
+    var r=parseInt(where.slice(2),10);badge.textContent='评论 Comment';
     initDanmu();S.dmRound=r;resetDmWrong(r);
     document.getElementById('dm-round').textContent=r+1;
     document.getElementById('dm-task-banner').innerHTML=makeInsBlock(dmRounds[r].task,dmRounds[r].task_en);
     show('s-l2');
   }
-  else if(where==='write'){badge.textContent='评论 Commenter';goWriteComment();}
+  else if(where==='write'){badge.textContent='评论 Comment';goWriteComment();}
   else if(where==='likes'){goLikes();}
   else if(where==='postintro'){goPostIntro();}
   else if(where==='post'){goPost();}
   else if(where==='peer'){goPeer();}
-  else if(where==='reply'){badge.textContent='评论 Commenter';goReply();}
+  else if(where==='reply'){badge.textContent='评论 Comment';goReply();}
   else if(where==='report'){showReport();}
 }
 
