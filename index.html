@@ -3602,11 +3602,12 @@ function prItems(){
     W.forEach(function(w,i){out.push({k:kp+'w'+i,t:'w',core:n,zh:w[0],py:w[1],en:w[2],line:n===COURSE?w[3]:0,ex:ex(w[3])});});
     Pt.forEach(function(p,i){out.push({k:kp+'p'+i,t:'p',core:n,zh:p[0],py:'',en:p[1],line:n===COURSE?p[2]:0,ex:ex(p[2]),frags:p[3]});});});
   vidItems().forEach(function(x){if(!out.some(function(y){return y.zh===x.zh;}))out.push(x);});
+  (window.SITE_WORDS||[]).forEach(function(w,i){out.push({k:'pw'+i,t:'s',zh:w[0],py:w[1],en:w[2],line:0});});
   vocabSaved().forEach(function(w){if(out.some(function(x){return x.zh===w;}))return;var e=getEntry(w);if(e)out.push({k:'v:'+w,t:'v',zh:w,py:e.py,en:e.en,line:0});});
   return out;
 }
 function prMistakes(){var m=S.mist||{};return prItems().filter(function(x){return m[x.k];});}
-function prDeckItems(){var a=prItems();if(prDeck==='m')return prMistakes();if(prDeck==='tyler')return a.filter(function(x){return x.core===1;});if(prDeck.indexOf('core')===0){var cn=+prDeck.slice(4);return a.filter(function(x){return x.core===cn;});}if(prDeck.indexOf('vid:')===0){var id=prDeck.slice(4);return a.filter(function(x){return x.vid===id;});}return a.filter(function(x){return prDeck==='all'?x.t!=='v':prDeck===x.t;});}
+function prDeckItems(){var a=prItems();if(prDeck==='m')return prMistakes();if(prDeck==='tyler')return a.filter(function(x){return x.core===1;});if(prDeck.indexOf('core')===0){var cn=+prDeck.slice(4);return a.filter(function(x){return x.core===cn;});}if(prDeck.indexOf('vid:')===0){var id=prDeck.slice(4);return a.filter(function(x){return x.vid===id;});}if(prDeck==='plat')return a.filter(function(x){return x.t==='s';});return a.filter(function(x){return prDeck==='all'?(x.t!=='v'&&x.t!=='s'):prDeck===x.t;});}
 function srs(){return S.srs||(S.srs={});}
 function todayStr(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
 function prToday(){if(!S.prDay||S.prDay.d!==todayStr())S.prDay={d:todayStr(),xp:0,nNew:0,nRev:0};return S.prDay;}
@@ -3628,11 +3629,12 @@ function goCards(){
 function prDecks(){var decks=[['tyler','我的新形象有没有很惊艳','铁蛋儿 Tyler',0]],nm=prMistakes().length;[2,3].forEach(function(n){if(COURSES[n])decks.push(['core'+n,COURSES[n].title,COURSES[n].creator,n-1]);});
   vidList().forEach(function(v,i){if(v.words&&v.words.length)decks.push(['vid:'+v.id,v.title||('练习视频 '+(i+1)),v.creator||('Practice video '+(i+1)),i+1]);});
   if(decks.length>1)decks.push(['all','全部视频','All videos',-1]);
+  decks.push(['plat','小红书常用词','Xiaohongshu platform words',-4]);
   if(vocabSaved().length)decks.push(['v','我的生词','My words',-2]);
   if(nm)decks.push(['m','错题本','Mistakes',-3]);return decks;}
 var BOOK_C=[['#9F5E25','#F8ECE1'],['#3F666C','#E8F0F1'],['#436139','#E7EFE4'],['#8C5A66','#F6EFEA'],['#CA5C31','#F6EFEA']];
-function bookColor(d){return d[3]>=0?BOOK_C[d[3]%BOOK_C.length]:d[3]===-1?['#5B3615','#F6E7DA']:d[3]===-2?['#436139','#E7EFE4']:['#CA5C31','#F6EFEA'];}
-function bookCover(d,big){var c=bookColor(d)[0],icn=d[3]===-2?'search':d[3]===-3?'cards':d[3]===-1?'window':'film';
+function bookColor(d){return d[3]>=0?BOOK_C[d[3]%BOOK_C.length]:d[3]===-1?['#5B3615','#F6E7DA']:d[3]===-2?['#436139','#E7EFE4']:d[3]===-4?['#3F666C','#E8F0F1']:['#CA5C31','#F6EFEA'];}
+function bookCover(d,big){var c=bookColor(d)[0],icn=d[3]===-2?'search':d[3]===-3?'cards':d[3]===-4?'cloud':d[3]===-1?'window':'film';
   return '<div class="wb-cover'+(big?'':' sm')+'" style="background:'+c+'">'+(d[3]>=0?'<span class="wb-ct">'+esc(d[1])+'</span><span class="wb-cb">'+ico('play',14)+(d[3]===0?'视频 1':'视频 '+(d[3]+1))+'</span>':ico(icn,big?26:22,1.7)+'<small>'+esc(d[1])+'</small>')+'</div>';}
 function deckStats(items){var r=srs(),now=Date.now(),o={tot:items.length,learning:0,mastered:0,fresh:0,due:0};
   items.forEach(function(x){var c=r[x.k];if(!c||!c.b)o.fresh++;else{if(c.b>=PR_MASTER)o.mastered++;else o.learning++;if(c.due<=now)o.due++;}});return o;}
