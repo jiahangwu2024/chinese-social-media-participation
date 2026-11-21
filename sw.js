@@ -1,7 +1,7 @@
 // Service worker for 玩转中国社媒.
 // Pages: network first (students always get your latest edit when online), cache as offline fallback.
 // Icons and fonts: cache first.
-const CACHE = 'navcsm-v154';   // change this name when you want to force-clear old caches
+const CACHE = 'navcsm-v155';   // change this name when you want to force-clear old caches
 const CORE = ['./', './index.html', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', ...Array.from({length: 20}, (_, i) => './dog-variants/dog-' + String(i + 1).padStart(2, '0') + '.png'), './dog-variants/dog-08-clean.png'];
 
 self.addEventListener('install', e => {
