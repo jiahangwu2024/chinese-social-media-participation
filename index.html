@@ -4932,6 +4932,14 @@ function audBlob(key){
     if(r.status===206)return r.arrayBuffer().then(mk);
     if(r.ok)return r.arrayBuffer().then(function(all){audFull[file]=all;return mk(all.slice(o[0],o[0]+o[1]));});
     throw 0;});}
+function rangeBlob(file,o,ck){
+  if(audUrlCache[ck])return Promise.resolve(audUrlCache[ck]);
+  var mk=function(b){var u=URL.createObjectURL(new Blob([b],{type:'audio/mpeg'}));audUrlCache[ck]=u;return u;};
+  if(audFull[file])return Promise.resolve(mk(audFull[file].slice(o[0],o[0]+o[1])));
+  return fetch(file,{headers:{Range:'bytes='+o[0]+'-'+(o[0]+o[1]-1)}}).then(function(r){
+    if(r.status===206)return r.arrayBuffer().then(mk);
+    if(r.ok)return r.arrayBuffer().then(function(all){audFull[file]=all;return mk(all.slice(o[0],o[0]+o[1]));});
+    throw 0;});}
 function playSeq(keys,tok,fallback){
   Promise.all(keys.map(audBlob)).then(function(list){
     var i=0;(function next(){if(tok!==audTok||i>=list.length)return;var a=new Audio(list[i++]);audCur=a;
@@ -4950,6 +4958,8 @@ function speak(w){
   audTok++;var tok=audTok;try{if(audCur)audCur.pause();if(window.speechSynthesis)speechSynthesis.cancel();}catch(e){}
   var fb=function(){if(tok===audTok)ttsSpeak(w);};
   if(location.protocol==='file:'){fb();return;}
+  var pk=EXTRA_PACK&&(EXTRA_PACK[VOICE==='m'?'m':'f']||{})[w];
+  if(pk){rangeBlob(EXTRA_PACK.file,pk,'xp|'+VOICE+'|'+w).then(function(u){if(tok!==audTok)return;var a=new Audio(u);audCur=a;a.onerror=fb;var pr=a.play();if(pr&&pr.catch)pr.catch(fb);}).catch(fb);return;}
   var ex=EXTRA_AUD&&EXTRA_AUD[VOICE==='m'?'m':'f'];ex=ex&&ex[w];
   if(ex){var a=new Audio(ex);audCur=a;a.onerror=fb;var pr=a.play();if(pr&&pr.catch)pr.catch(fb);return;}
   if(AUD.w[w]!==undefined){playSeq(['w'+AUD.w[w]],tok,fb);return;}
@@ -5411,11 +5421,11 @@ var CHALLENGES=[
  {id:'c3',start:'2026-11-16',e:'🔍',zh:'在小红书搜「挑战」，找一条挑战类视频，说说它有哪几个阶段。',en:'Search 「挑战」 on Xiaohongshu, find a challenge video and name its stages.'},
  {id:'c4',start:'2026-11-23',e:'💬',zh:'在一条真实的笔记下面，用「挺……的」或「更……了」写一条评论。',en:'Under a real note, write a comment using 「挺……的」 or 「更……了」.'}
 ];
-var CONFIG={submitUrl:'',classBest:null},EXTRA_AUD={};
+var CONFIG={submitUrl:'',classBest:null},EXTRA_AUD={},EXTRA_PACK=null;
 function loadContent(){if(location.protocol==='file:')return;
   fetch('content.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
     if(j.weekly&&j.weekly.length)WEEKLY=j.weekly;if(j.videos)VIDEOS=j.videos;syncVideos();if(j.challenges&&j.challenges.length)CHALLENGES=j.challenges;
-    if(j.padlet)PADLET_URL=j.padlet;if(j.audio)EXTRA_AUD=j.audio;if(j.submitUrl!=null)CONFIG.submitUrl=j.submitUrl;if(j.classBest!==undefined)CONFIG.classBest=j.classBest;
+    if(j.padlet)PADLET_URL=j.padlet;if(j.audio)EXTRA_AUD=j.audio;if(j.audioPack&&j.audioPack.file)EXTRA_PACK=j.audioPack;if(j.submitUrl!=null)CONFIG.submitUrl=j.submitUrl;if(j.classBest!==undefined)CONFIG.classBest=j.classBest;
     var cur=(document.querySelector('.screen.on')||{}).id;if(cur==='s-hub')renderHub();if(cur==='s-video-hub')renderChallengeVideoHub();if(cur==='s-prac')renderPrac();if(cur==='s-cards'&&!prRound&&!document.getElementById('pr-home').hidden)prHome();appBadge();
   }).catch(function(){});}
 function ymd(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}

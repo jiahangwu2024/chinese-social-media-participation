@@ -1,9 +1,9 @@
 # 补全配音 Fill in missing audio
 # 给 missing_audio.json 里的句子和词生成女声（晓晓）和男声（云扬），
-# 放进 audio 文件夹，并把对照表写进同一个文件夹里的 content.json。
+# 先放进 audio 文件夹，最后打包成一个文件 audio-x-xxxx.bin，对照表写进同一个文件夹里的 content.json。
 # 用法（在 Mac「终端」里）：
 #   cd ~/网络语音/网站上传/这次上传GitHub-v155 && python3 gen_all.py
-# 大约 10–15 分钟。完成后把 content.json 和 audio 文件夹一起上传到 GitHub。
+# 大约 10–15 分钟。完成后只需要上传：content.json、audio-x-xxxx.bin、index.html、sw.js（audio 文件夹不用上传）。
 import asyncio, json, os, hashlib, sys
 try:
     import edge_tts
@@ -33,7 +33,6 @@ async def one(v, text, sem):
             else:
                 failed.append(text)
                 return
-    aud.setdefault(v, {})[text] = rel
 
 async def main():
     sem = asyncio.Semaphore(4)
@@ -46,7 +45,22 @@ async def main():
             print("  %d / %d" % (done, len(jobs)), flush=True)
 
 asyncio.run(main())
+# 打包成一个文件 Pack everything into one file
+data = bytearray(); pack = {}
+for v in VOICES:
+    pack[v] = {}
+    for t in want:
+        path = os.path.join(HERE, "audio/%s_%s.mp3" % (v, hashlib.md5(t.encode("utf-8")).hexdigest()[:10]))
+        if os.path.exists(path) and os.path.getsize(path) > 500:
+            b = open(path, "rb").read()
+            pack[v][t] = [len(data), len(b)]
+            data += b
+name = "audio-x-%s.bin" % hashlib.md5(bytes(data)).hexdigest()[:8]
+open(os.path.join(HERE, name), "wb").write(data)
+pack["file"] = name
+c["audioPack"] = pack
 json.dump(c, open(P, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+print("打包好了 Packed:", name, "%.1f MB" % (len(data) / 1e6))
 print("完成 Done.", len(want), "条，失败", len(set(failed)), "条")
 if failed:
     print("没成功的（再运行一次就会补上）:", "、".join(sorted(set(failed))[:20]))
